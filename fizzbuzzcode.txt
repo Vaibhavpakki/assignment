@@ -1,0 +1,10 @@
+const oneToOneHundred = Array.from({ length: 100 }, (_, i) => i + 1);
+
+const fizzBuzz = (i) => {
+  if (Number.isInteger(i / 15)) return 'FizzBuzz';
+  if (Number.isInteger(i / 3)) return 'Fizz';
+  if (Number.isInteger(i / 5)) return 'Buzz';
+  return i;
+};
+
+console.log(oneToOneHundred.map((i) => fizzBuzz(i)).join('\n'));
